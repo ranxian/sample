@@ -23,11 +23,16 @@ end
 gem 'jquery-rails'
 
 group :development, :test do
+  gem 'guard-rspec'
   gem 'rspec-rails'
 end
 
 group :test do
+  gem 'guard-spork'
   gem 'capybara'
+  gem 'rb-inotify'
+  gem 'libnotify'
+  gem 'spork'
 end
 
 # To use ActiveModel has_secure_password
