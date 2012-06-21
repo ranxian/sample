@@ -21,10 +21,12 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'bcrypt-ruby'
 
 group :development, :test do
   gem 'guard-rspec'
   gem 'rspec-rails'
+  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :test do
