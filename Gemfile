@@ -35,6 +35,7 @@ group :test do
   gem 'rb-inotify'
   gem 'libnotify'
   gem 'spork'
+  gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
