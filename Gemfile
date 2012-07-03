@@ -32,10 +32,10 @@ end
 group :test do
   gem 'guard-spork'
   gem 'capybara'
-  gem 'rb-inotify'
-  gem 'libnotify'
   gem 'spork'
   gem 'factory_girl_rails'
+  gem 'rb-inotify' if RUBY_PLATFORM.downcase.include?("linux")
+  gem 'rb-fsevent' if RUBY_PLATFORM.downcase.include?("darwin")
 end
 
 group :production do
