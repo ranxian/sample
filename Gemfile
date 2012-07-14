@@ -27,6 +27,8 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'rspec-rails'
   gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+  gem 'growl'
+  gem 'growlnotify'
 end
 
 group :test do
@@ -34,8 +36,6 @@ group :test do
   gem 'capybara'
   gem 'spork'
   gem 'factory_girl_rails'
-  gem 'rb-inotify' if RUBY_PLATFORM.downcase.include?("linux")
-  gem 'rb-fsevent' if RUBY_PLATFORM.downcase.include?("darwin")
 end
 
 group :production do
